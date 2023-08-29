@@ -13,5 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+//    dependencies {
+//        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.20")
+//    }
+}
 
 // Root build.gradle.kts
