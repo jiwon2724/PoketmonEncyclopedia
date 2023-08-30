@@ -28,13 +28,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Multimodule template"
+rootProject.name = "PoketmonEncyclopedia"
 
 include(":app")
-include(":core-data")
-include(":core-database")
-include(":core-testing")
-include(":core-ui")
-include(":feature-dataitemtype")
-include(":test-app")
-include(":feature")
+include(":feature:poketmonlist")
