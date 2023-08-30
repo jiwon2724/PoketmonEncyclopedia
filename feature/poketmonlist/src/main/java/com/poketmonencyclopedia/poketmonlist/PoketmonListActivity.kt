@@ -1,7 +1,8 @@
 package com.poketmonencyclopedia.poketmonlist
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.poketmonencyclopedia.feature.poketmonlist.R
 
 class PoketmonListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

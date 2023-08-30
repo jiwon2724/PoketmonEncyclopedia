@@ -57,6 +57,7 @@ android {
 dependencies {
     // Hilt Dependency Injection
     implementation(libs.hilt.android)
+    implementation("androidx.appcompat:appcompat:1.6.1")
     kapt(libs.hilt.compiler)
     // Hilt and instrumented tests.
     androidTestImplementation(libs.hilt.android.testing)
