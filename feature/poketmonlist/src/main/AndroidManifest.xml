@@ -9,11 +9,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PoketmonEncyclopedia">
         <activity
-            android:name=".PoketmonListActivity"
+            android:theme="@style/Base.Theme.PoketmonEncyclopedia"
+            android:name="com.poketmonencyclopedia.poketmonlist.PoketmonListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
