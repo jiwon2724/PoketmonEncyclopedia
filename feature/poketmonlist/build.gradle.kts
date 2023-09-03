@@ -26,7 +26,7 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        minSdk = 21
+        minSdk = 23
 
         testInstrumentationRunner = "com.poketmonencyclopedia.core.testing.HiltTestRunner"
         consumerProguardFiles("consumer-rules.pro")
