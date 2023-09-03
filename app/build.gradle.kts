@@ -29,7 +29,7 @@ android {
 
     defaultConfig {
         applicationId = "com.poketmonencyclopedia"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -61,15 +61,11 @@ android {
     }
 
     buildFeatures {
-        compose = true
         aidl = false
         buildConfig = false
         renderScript = false
         shaders = false
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.androidxComposeCompiler.get()
+        viewBinding = true
     }
 
     packagingOptions {
@@ -83,9 +79,14 @@ dependencies {
 
     // Core Android dependencies
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
 
     // Hilt Dependency Injection
     implementation(libs.hilt.android)
+    implementation("com.google.android.material:material:1.5.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.core:core-splashscreen:1.0.0-alpha01")
     kapt(libs.hilt.compiler)
+
+    implementation(project(":feature:poketmonlist"))
 }

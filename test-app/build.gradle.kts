@@ -60,6 +60,4 @@ dependencies {
     implementation(libs.hilt.android.testing)
     kapt(libs.hilt.android.compiler)
 
-    // Compose
-    implementation(libs.androidx.compose.ui.test.junit4)
 }
