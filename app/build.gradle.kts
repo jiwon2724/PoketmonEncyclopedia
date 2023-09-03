@@ -88,5 +88,5 @@ dependencies {
     implementation("androidx.core:core-splashscreen:1.0.0-alpha01")
     kapt(libs.hilt.compiler)
 
-//    implementation(project(":feature:poketmonlist"))
+    implementation(project(":feature:poketmonlist"))
 }
