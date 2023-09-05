@@ -12,5 +12,6 @@ class SplashActivity : AppCompatActivity() {
         installSplashScreen()
         setContentView(R.layout.activity_splash)
         startActivity(Intent(this, PoketmonListActivity::class.java))
+        finish()
     }
 }

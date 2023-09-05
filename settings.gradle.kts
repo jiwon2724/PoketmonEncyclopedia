@@ -32,3 +32,6 @@ rootProject.name = "PoketmonEncyclopedia"
 
 include(":app")
 include(":feature:poketmonlist")
+include(":core:data")
+include(":core:domain")
+include(":core:ui")
