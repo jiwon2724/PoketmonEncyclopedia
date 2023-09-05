@@ -32,6 +32,10 @@ android {
         consumerProguardFiles("consumer-rules.pro")
     }
 
+    viewBinding {
+        enable = true
+    }
+
     buildFeatures {
         aidl = false
         buildConfig = false
@@ -71,4 +75,6 @@ dependencies {
     androidTestImplementation(libs.androidx.test.runner)
 
     implementation("androidx.activity:activity-ktx:1.1.0")
+
+    implementation(project(":core:ui"))
 }
