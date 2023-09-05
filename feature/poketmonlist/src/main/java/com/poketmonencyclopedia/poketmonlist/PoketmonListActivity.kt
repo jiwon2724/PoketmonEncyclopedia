@@ -1,17 +1,11 @@
 package com.poketmonencyclopedia.poketmonlist
 
-import android.os.Bundle
-import android.util.Log
-import android.widget.TextView
-import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import com.poketmonencyclopedia.feature.poketmonlist.R
+import com.poketmonencyclopedia.feature.poketmonlist.databinding.ActivityPoketmonListBinding
+import com.poketmonencyclopedia.ui.BaseActivity
 
-class PoketmonListActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_poketmon_list)
+class PoketmonListActivity : BaseActivity<ActivityPoketmonListBinding>() {
+    override fun bindingFactory() = ActivityPoketmonListBinding.inflate(layoutInflater)
+    override fun initView() {
+
     }
 }
