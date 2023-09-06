@@ -77,4 +77,5 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.1.0")
 
     implementation(project(":core:ui"))
+    implementation("io.coil-kt:coil:2.4.0")
 }
