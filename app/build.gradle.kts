@@ -89,4 +89,5 @@ dependencies {
     kapt(libs.hilt.compiler)
 
     implementation(project(":feature:poketmonlist"))
+    implementation("io.coil-kt:coil:2.4.0")
 }
