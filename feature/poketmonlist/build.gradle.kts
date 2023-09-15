@@ -78,4 +78,5 @@ dependencies {
 
     implementation(project(":core:ui"))
     implementation("io.coil-kt:coil:2.4.0")
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
 }
