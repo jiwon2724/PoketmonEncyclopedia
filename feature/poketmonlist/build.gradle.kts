@@ -77,6 +77,7 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.1.0")
 
     implementation(project(":core:ui"))
+    implementation(project(":core:domain"))
     implementation("io.coil-kt:coil:2.4.0")
     implementation("androidx.recyclerview:recyclerview:1.2.1")
 }
