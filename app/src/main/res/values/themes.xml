@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Base.Theme.PoketmonEncyclopedia" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
     <style name="Theme.Splash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/white</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
-        <item name="postSplashScreenTheme">@style/Theme.PoketmonEncyclopedia</item>
-    </style>
-
-    <style name="Theme.PoketmonEncyclopedia" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="postSplashScreenTheme">@style/Base.Theme.PoketmonEncyclopedia</item>
     </style>
 </resources>
 

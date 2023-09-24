@@ -80,4 +80,5 @@ dependencies {
     implementation(project(":core:domain"))
     implementation("io.coil-kt:coil:2.4.0")
     implementation("androidx.recyclerview:recyclerview:1.2.1")
+    implementation("com.google.android.material:material:1.11.0-alpha02")
 }
