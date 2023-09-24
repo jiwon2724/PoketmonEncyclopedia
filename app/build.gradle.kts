@@ -25,12 +25,12 @@ plugins {
 
 android {
     namespace = "com.poketmonencyclopedia"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.poketmonencyclopedia"
         minSdk = 23
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -88,6 +88,6 @@ dependencies {
     implementation("androidx.core:core-splashscreen:1.0.0-alpha01")
     kapt(libs.hilt.compiler)
 
-    implementation(project(":feature:poketmonlist"))
+    implementation(project(":feature:poketmon"))
     implementation("io.coil-kt:coil:2.4.0")
 }

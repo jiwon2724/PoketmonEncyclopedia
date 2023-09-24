@@ -6,13 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.poketmonencyclopedia.feature.poketmondetail.R
+import com.poketmonencyclopedia.feature.poketmondetail.databinding.FragmentPoketmonDetailBinding
+import com.poketmonencyclopedia.ui.BaseFragment
 
-class PoketmonDetailFragment : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+class PoketmonDetailFragment : BaseFragment<FragmentPoketmonDetailBinding>() {
+    override fun bindingFactory(inflater: LayoutInflater, parent: ViewGroup?): FragmentPoketmonDetailBinding {
+        return FragmentPoketmonDetailBinding.inflate(
+            inflater,
+            parent,
+            false
+        )
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_poketmon_detail, container, false)
+    override fun initViews() {
+
     }
 }
