@@ -1,18 +1,20 @@
 package com.poketmonencyclopedia.poketmonlist
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import com.poketmonencyclopedia.feature.poketmonlist.R
+import com.poketmonencyclopedia.feature.poketmonlist.databinding.FragmentPoketmonListBinding
+import com.poketmonencyclopedia.ui.BaseFragment
 
-class PoketmonListFragment : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+class PoketmonListFragment : BaseFragment<FragmentPoketmonListBinding>() {
+    override fun bindingFactory(inflater: LayoutInflater, parent: ViewGroup?): FragmentPoketmonListBinding {
+        return FragmentPoketmonListBinding.inflate(
+            inflater,
+            parent,
+            false
+        )
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_poketmon_list, container, false)
+    override fun initViews() {
+
     }
 }
