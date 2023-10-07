@@ -6,8 +6,10 @@ import com.poketmonencyclopedia.feature.poketmon.databinding.ActivityPoketmonBin
 import com.poketmonencyclopedia.poketmondetail.PoketmonDetailFragment
 import com.poketmonencyclopedia.poketmonlist.PoketmonListFragment
 import com.poketmonencyclopedia.ui.BaseActivity
+import dagger.hilt.android.AndroidEntryPoint
 import com.poketmonencyclopedia.ui.R as UI
 
+@AndroidEntryPoint
 class PoketmonActivity : BaseActivity<ActivityPoketmonBinding>() {
     override fun bindingFactory() = ActivityPoketmonBinding.inflate(layoutInflater)
     override fun initView() {
