@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.zip
 import javax.inject.Inject
 
-class PoketmonListRepositoryImpl @Inject constructor(private val poketmonDetailApi: PoketmonDetailApi) : PoketmonDetailRepository {
+class PoketmonDetailRepositoryImpl @Inject constructor(private val poketmonDetailApi: PoketmonDetailApi) : PoketmonDetailRepository {
     private suspend fun getPoketmonInformation(): Flow<InformationResponse> = flow {
         poketmonDetailApi.getPoketmonInformation()
     }
