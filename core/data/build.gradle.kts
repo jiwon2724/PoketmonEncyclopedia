@@ -3,6 +3,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.hilt.gradle)
     alias(libs.plugins.kotlin.kapt)
     kotlin("plugin.serialization") version "1.5.0"
 }
@@ -42,5 +43,7 @@ dependencies {
     implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
     implementation(project(":core:domain"))
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
     implementation(libs.hilt.android)
 }
