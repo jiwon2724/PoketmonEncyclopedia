@@ -25,7 +25,7 @@ class PoketmonActivity : BaseActivity<ActivityPoketmonBinding>() {
 
     private fun replaceFragment(fragment: Fragment){
         val fragmentTransaction = supportFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.bottomNavigationView, fragment)
+        fragmentTransaction.replace(R.id.layout_frame, fragment)
         fragmentTransaction.commit()
     }
 }

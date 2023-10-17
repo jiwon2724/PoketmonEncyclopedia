@@ -3,7 +3,7 @@ package com.poketmonencyclopedia.detail.model.species
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Language(
-    val name: String,
-    val url: String
+data class Description(
+    val description: String,
+    val language: Language
 )
