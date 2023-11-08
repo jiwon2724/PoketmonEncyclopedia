@@ -1,6 +1,5 @@
 package com.poketmonencyclopedia.poketmondetail
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
@@ -10,6 +9,7 @@ import androidx.lifecycle.repeatOnLifecycle
 import com.poketmonencyclopedia.feature.poketmondetail.databinding.FragmentPoketmonDetailBinding
 import com.poketmonencyclopedia.ui.BaseFragment
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -25,10 +25,14 @@ class PoketmonDetailFragment : BaseFragment<FragmentPoketmonDetailBinding>() {
     }
 
     override fun initViews() {
-        Log.d("initViews : ", "test")
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
-                poketmonDetailViewModel.getPoketmonDetail()
+                poketmonDetailViewModel.mState.collectLatest {
+                    when(it) {
+                        is HomeMainFragmentState.Detail -> { }
+                        else -> { }
+                    }
+                }
             }
         }
     }
