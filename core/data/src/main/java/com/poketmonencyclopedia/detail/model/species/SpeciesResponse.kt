@@ -1,14 +1,16 @@
 package com.poketmonencyclopedia.detail.model.species
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class SpeciesResponse(
     val base_happiness: Int,
     val capture_rate: Int,
     val color: Color,
     val egg_groups: List<EggGroup>,
     val evolution_chain: EvolutionChain,
-    val evolves_from_species: Any,
     val flavor_text_entries: List<FlavorTextEntry>,
-    val form_descriptions: List<Any>,
+    val form_descriptions: List<Description>,
     val forms_switchable: Boolean,
     val gender_rate: Int,
     val genera: List<Genera>,

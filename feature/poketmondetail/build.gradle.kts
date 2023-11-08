@@ -20,6 +20,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.hilt.gradle)
+    kotlin("plugin.serialization") version "1.4.21"
 }
 
 android {
@@ -84,5 +85,5 @@ dependencies {
     implementation("io.coil-kt:coil:2.4.0")
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("androidx.activity:activity-ktx:1.1.0")
-    implementation("androidx.fragment:fragment-ktx:1.2.5")
+    implementation("androidx.fragment:fragment-ktx:1.6.1")
 }
